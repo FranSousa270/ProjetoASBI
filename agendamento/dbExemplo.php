@@ -1,9 +1,9 @@
 <?php
-$host = "127.0.0.1:3316";   
+$host = "000.0.0.0:3316";  //tambem necessario porta 3316 
 $dbname = "clinica_1";   
-$user = "root";        
+$user = "nomedeUsuario";        
 $pass = "";           
-
+//necessario ser em pdo
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
