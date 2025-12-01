@@ -1,12 +1,13 @@
-📘 Projeto — Associação da Saúde Bucal Infantil
+## 📘 Projeto — Associação da Saúde Bucal Infantil
 
 Este projeto foi criado com o objetivo de atender crianças em situação de vulnerabilidade, oferecendo acompanhamento de saúde bucal através de uma plataforma simples e eficiente.
 
 O sistema foi desenvolvido inteiramente em PHP e JavaScript.
 
-Dentistas voluntários podem se cadastrar no site, liberar horários e atender pacientes inscritos. Os associados (pacientes) conseguem visualizar horários disponíveis, fazer agendamentos e acompanhar seu histórico de atendimentos.
+Dentistas voluntários podem se cadastrar no site, liberar horários e atender pacientes inscritos.
+Os associados (pacientes) conseguem visualizar horários disponíveis, realizar agendamentos e acompanhar seu histórico de atendimentos.
 
-🚀 Funcionalidades do Sistema
+## 🚀 Funcionalidades do Sistema
 👨‍⚕️ Para Dentistas
 
 Cadastro e login como Dentista
@@ -21,25 +22,25 @@ Procedimento realizado
 
 Observações
 
-Relatórios gerados com Chart.js
+Relatórios com Chart.js
 
 Lista de pacientes atendidos
 
-Pesquisa por nome e procedimento para dar continuidade ao tratamento
+Pesquisa por nome e procedimento para continuidade de tratamento
 
 👤 Para Associados (Pacientes)
 
 Cadastro e login como Associado
 
-Carteirinha do paciente
+Carteirinha personalizada
 
 Histórico completo de atendimentos
 
-Acesso aos horários liberados pelos dentistas
+Visualização dos horários liberados pelos dentistas
 
-Realização de agendamentos diretamente pela plataforma
+Realização de agendamentos
 
-🛠️ Requisitos
+## 🛠️ Requisitos
 
 Certifique-se de ter instalado:
 
@@ -49,43 +50,41 @@ Servidor Web (Apache ou Nginx)
 
 MySQL
 
-IMPORTANTE:
+## ⚠️ IMPORTANTE:
+O projeto foi desenvolvido utilizando a porta 3316 do MySQL (XAMPP).
+Altere a porta do seu MySQL para 3316 para evitar erros de conexão.
 
-O projeto foi desenvolvido utilizando a porta 3316 do XAMPP.
-Por favor, altere a porta do seu MySQL para 3316 para evitar erros de conexão.
-
-🗄️ Banco de Dados
+## 🗄️ Banco de Dados
 
 Crie um banco MySQL chamado:
-
 clinica_1
 
 
-Importe o arquivo:
+Importe o arquivo localizado na raiz do projeto:
 
 database.sql
 
 
-Este arquivo contém apenas a estrutura das tabelas necessárias.
+Esse arquivo contém apenas a estrutura das tabelas.
 
-⚠️ Ajustes Necessários (Contratempos)
+## ⚠️ Ajustes Necessários
 
-Infelizmente, por falta de tempo, duas conexões ficaram fora da padronização.
-Por isso, você precisa criar manualmente:
+Devido a contratempos, duas conexões ficaram fora da padronização.
+Você precisa criar manualmente os seguintes arquivos:
 
-1. conexao.php (na raiz do projeto)
+📌 conexao.php (na raiz do projeto)
 
-Arquivo responsável pela conexão geral ao banco.
+Responsável pela conexão principal com o banco.
 
-2. db.php (dentro da pasta /agendamento)
+📌 db.php (na pasta /agendamento)
 
-Arquivo responsável pela conexão específica usada no sistema de agendamento.
+Responsável pela conexão usada no sistema de agendamentos.
 
-No futuro, será feita a padronização de ambos.
-Exemplos de como devem ser esses arquivos estão incluídos no repositório.
+Exemplos de ambos arquivos estão incluídos no repositório, para facilitar a criação.
 
-🧭 Como Navegar pelo Sistema
-👨‍⚕️ Dentista
+## 🧭 Como Navegar pelo Sistema
+
+👨‍⚕️ Como usar como Dentista
 
 Cadastre-se como Dentista no menu "Cadastro".
 
@@ -93,19 +92,19 @@ Faça login como Dentista.
 
 Acesse sua Carteirinha.
 
-Vá até Agenda no menu lateral.
+No menu lateral, vá até Agenda.
 
-Libere seus horários disponíveis.
+Libere horários disponíveis.
 
-Aguarde os associados realizarem agendamentos.
+Aguarde os associados agendarem.
 
-Após a consulta, acesse "Finalizar Consulta" e registre:
+Após cada consulta, finalize registrando:
 
-Procedimento
+Procedimento realizado
 
 Observações
 
-👤 Associado (Paciente)
+👤 Como usar como Associado
 
 Cadastre-se como Associado.
 
@@ -113,10 +112,10 @@ Faça login.
 
 Acesse sua Carteirinha.
 
-Vá em Agendamentos no menu lateral.
+Acesse o menu Agendamentos.
 
-Veja os horários liberados pelos dentistas.
+Veja os horários disponíveis.
 
 Escolha um horário e confirme o agendamento.
 
-Veja todo seu histórico de atendimentos na Carteirinha
+Consulte seu Histórico de Atendimentos na Carteirinha.
