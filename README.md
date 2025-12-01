@@ -28,6 +28,9 @@ Lista de pacientes atendidos
 
 Pesquisa por nome e procedimento para continuidade de tratamento
 
+---
+
+
 👤 Para Associados (Pacientes)
 
 Cadastro e login como Associado
@@ -104,6 +107,8 @@ Procedimento realizado
 
 Observações
 
+---
+
 👤 Como usar como Associado
 
 Cadastre-se como Associado.
@@ -119,3 +124,4 @@ Veja os horários disponíveis.
 Escolha um horário e confirme o agendamento.
 
 Consulte seu Histórico de Atendimentos na Carteirinha.
+
